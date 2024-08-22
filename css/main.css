@@ -1,0 +1,92 @@
+main {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;    
+
+    min-height: 800px;
+    height: 100vh;
+}
+
+.container-msg {
+    width: 300px;
+    height: max-content;
+    padding: 10px;
+
+    margin-left: 80px;
+    
+    background-color: var(--cinza);
+    
+    color: var(--azul-escuro);
+
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px var(--preto-transparente);
+}
+
+.container-msg h2 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+    color: inherit;
+
+    text-align: center;
+}
+
+.form-msg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: inherit;
+}
+
+.form-msg label {
+    margin-bottom: 5px;
+
+    color: inherit;
+}
+
+.form-msg input, textarea {
+    margin-bottom: 20px;
+    height: 30px;
+
+    background-color: var(--branco);
+
+    border: 1px solid var(--azul-escuro);
+    border-radius: 5px;
+
+    color: inherit;
+}
+
+.form-msg textarea {
+    height: 120px;
+    resize: none;
+}
+
+#submit-form {
+    height: 40px;
+    margin-bottom: 0px;
+    
+    border: none;
+    background-color: var(--verde);
+    font-weight: 700;
+}
+
+#submit-form:hover { 
+    cursor: pointer;
+    box-shadow: 0px 0px 5px var(--verde)
+}
+
+#bg-galaxia {
+    position: absolute;
+
+    bottom: 0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    z-index: -1;
+
+    object-fit: cover;
+    
+    border-radius: 50% / 100% 0px 0px 0px ;
+}
